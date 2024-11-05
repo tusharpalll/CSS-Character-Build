@@ -1,0 +1,271 @@
+.hidden {
+    display: none;
+}
+html, body {
+    height: 100%;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(251, 251, 251);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(226, 255, 146);
+    padding: 10px 0px;
+}
+
+#main-logo {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 10px 10px 20px rgba(0,0,0,5);
+}
+
+#character-nav {
+    background-image: url(../images/back.avif);
+    background-blend-mode: multiply;
+}
+
+#character-nav ul {
+    list-style-type: none; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#character-nav  ul li{
+    height: 220px;
+    margin: 10px 8px; /*top, bottom, left right*/
+    background-color: black;
+    box-shadow: 0px 155px 0 0 rgb(236, 236, 236) inset;
+    transition: box-shadow 0.2s ease-in-out;}
+
+#character-nav ul li h2 {
+    color: white;
+    font-size: 16px;
+}
+#character-nav ul li:hover {
+    box-shadow: 0 220px 0 0 rgb(194, 207, 93) inset ;
+
+}
+
+#character-nav ul li:active {
+    color: red;
+}
+
+#character-nav ul li a {
+    text-decoration: none;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/spritesheet.jpg);
+    
+}
+
+
+#Doraemon {
+    background-position: -150px 0;
+}
+
+#nobita {
+    background-position: -300px 0;
+}
+
+#sizuka{
+    background-position: -450px 0;
+}
+
+#takeshigoda {
+    background-position: -600px 0;
+}
+
+#dorami {
+    background-position: -750px 0;
+}
+
+#sewashinobi{
+    background-position: 900px 0;
+}
+
+#doraemon:hover , #nobita:hover, #sizuka:hover , #takeshigoda:hover , #dorami:hover , #dorami:hover , #sewashinobi:hover{
+    background-position-y: -150px;
+}
+
+#instructions {
+    padding: 20px;
+    text-align: center;
+}
+#instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+ }
+
+.lightbox{
+
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    background-image: url(../images/c35e683be5f16ccfaeb6e48a0a197e99.jpg);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 10px bottom;
+    display: none;
+}
+
+.lightbox:target{
+    display: block;
+ }
+
+.lightbox2{
+    width: 400vw;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(48, 4, 4, 0.85);
+    background-image: url(../images/shizuka-minamoto.webp);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-size: 50vh;
+    background-position: 1px bottom;
+
+    display: none;
+}
+
+.lightbox2:target{
+    display: block;
+ }
+
+ .lightbox3{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    background-image: url(../images/gian.jpg);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+.lightbox3:target{
+    display: block;
+ }
+
+.lightbox4{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    background-image: url(../images/dorami.png);
+    background-repeat: no-repeat;
+    background-size: 60vh;
+    background-position: 80px bottom;
+    display: none;
+}
+
+.lightbox4:target{
+    display: block;
+ }
+
+.lightbox5{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    background-image: url(../images/suzi.png);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+.lightbox5:target{
+    display: block;
+ }
+
+.lightbox6{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.85);
+    background-image: url(../images/doraemon1.png);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+.lightbox6:target{
+    display: block;
+ }
+
+ .doraemon-footer {
+    background-color:  rgb(226, 255, 146);
+    color: rgb(55, 47, 47);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-nav {
+    margin: 15px 0;
+  }
+  
+  .footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-nav a:hover {
+    color: #ffff00;
+  }
+  
+  .doraemon-quote {
+    font-style: italic;
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-nav a {
+      margin: 5px 0;
+    }
+  }
